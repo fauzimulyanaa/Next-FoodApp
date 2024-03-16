@@ -48,3 +48,8 @@
   cursor: pointer;
   outline: none;
 }
+
+.btn:hover {
+  color: #000;
+  transform: translateY(-7px);
+}

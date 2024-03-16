@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
+import BestSeller from './BestSeller';
+import About from './About';
 
 function Hero() {
   return (
@@ -29,6 +31,29 @@ function Hero() {
           <p className="text-[18px] font-bold mb-8">{'"Built with love and a passion, our team comprises talented culinary experts who strive to create high-quality burgers using fresh, premium ingredients"'}</p>
           <button className="button">About Us</button>
         </div>
+      </div>
+      <div className="mb-[90px] flex justify-between">
+        <div className="overflow-hidden relative">
+          <Image src="/hero-1.jpg" alt="burger" width={620} height={660} className="rounded-r-[30px]" />
+          <div className="bg-[#202020] w-[340px] h-[140px] rounded-[20px] absolute bottom-8 left-[100px] px-10">
+            <h1 className="text-white pt-3 font-custom text-2xl uppercase font-bold underline">Salt and vinager french fries</h1>
+            <p className="mt-4 text-purple-600 uppercase cursor-pointer">Order Online</p>
+          </div>
+        </div>
+        <div className="overflow-hidden relative">
+          <Image src="/hero-2.jpg" alt="burger" width={620} height={660} className="rounded-l-[30px]" />
+          <div className="bg-[#202020] w-[340px] h-[140px] rounded-[20px] absolute bottom-8 left-[100px] px-10">
+            <h1 className="text-white pt-3 font-custom text-2xl uppercase font-bold underline">Chrispy chicken Big Burger</h1>
+            <p className="mt-4 text-purple-600 uppercase cursor-pointer">Order Online</p>
+          </div>
+        </div>
+      </div>
+      <div className="mb-[90px] text-center px-[90px]">
+        <h1 className="text-white text-7xl font-custom uppercase font-bold">Order online or Come visit us today</h1>
+      </div>
+      <div className="">
+        <BestSeller />
+        <About />
       </div>
     </>
   );
