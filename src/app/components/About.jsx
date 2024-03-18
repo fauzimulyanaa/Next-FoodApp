@@ -3,7 +3,7 @@ import React from 'react';
 
 function About() {
   return (
-    <div className="bg-orange-600 h-auto pb-32 flex justify-between mb-[200px] px-[70px]">
+    <div className="bg-orange-600 h-auto pb-32 flex justify-between px-[70px]">
       <div className="text-center w-[40%] text-white flex justify-start items-center flex-col">
         <h1 className="text-6xl  w-[400px] font-bold">We From Home Made</h1>
         <p className="mt-5 mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A omnis nihil quasi sunt dolores nulla labore sit laudantium minima illo neque, incidunt expedita deserunt adipisci quis deleniti.</p>

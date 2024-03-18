@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import BestSeller from './BestSeller';
 import About from './About';
+import Menu from './Menu';
+import Footer from './Footer';
 
 function Hero() {
   return (
@@ -54,6 +56,10 @@ function Hero() {
       <div className="">
         <BestSeller />
         <About />
+        <Menu />
+      </div>
+      <div className="">
+        <Footer />
       </div>
     </>
   );
