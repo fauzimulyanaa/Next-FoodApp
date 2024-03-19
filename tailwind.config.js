@@ -9,6 +9,7 @@ module.exports = {
       },
       fontFamily: {
         custom: ['Permanent Marker', 'cursive'],
+        title: ['DynaPuff', 'system - ui'],
       },
     },
   },

@@ -12,18 +12,22 @@ function Navbar() {
     {
       id: 1,
       link: 'home',
+      page: '/',
     },
     {
       id: 2,
       link: 'about',
+      page: 'about',
     },
     {
       id: 3,
       link: 'menu',
+      page: 'menu',
     },
     {
       id: 4,
       link: 'contact',
+      page: 'contact',
     },
   ];
   return (
@@ -34,9 +38,9 @@ function Navbar() {
       </div>
       <div className="">
         <ul className="hidden md:flex items-center justify-center">
-          {links.map(({ id, link }) => (
+          {links.map(({ id, link, page }) => (
             <li key={id} className="nav-links px-4 cursor-pointer capitalize text-[14px] text-white hover:scale-105 hover:text-gary-900 duration-200 link-underline">
-              <Link href={link}>{link}</Link>
+              <Link href={page}>{link}</Link>
             </li>
           ))}
         </ul>
